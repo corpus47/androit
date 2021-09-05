@@ -7,6 +7,7 @@
         <title>AndroIT próbafeladat</title>
 
         <link rel="stylesheet" href="{{ asset('css/app.css')}}">
+        <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
     </head>
     <body class="bg-gray-200">
         <nav class="p-6 bg-white flex justify-between mb-6">

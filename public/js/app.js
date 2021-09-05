@@ -2054,8 +2054,11 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
-$(document).ready(function ($) {
-  $('#students').DataTable({
+$(document).ready(function () {
+  var students = $('#students').DataTable({
+    responsive: true
+  });
+  var users = $('#users').DataTable({
     responsive: true
   });
 });

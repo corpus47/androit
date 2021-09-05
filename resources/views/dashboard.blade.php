@@ -19,13 +19,15 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>teszt</td>
-                    <td>teszt</td>
-                    <td>teszt</td>
-                    <td>teszt</td>
-                    <td>teszt</td>
-                  </tr>
+                  @foreach($users as $user)
+                    <tr>
+                        <td>{{ $user['name'] }}</td>
+                        <td>{{ $user['username'] }}</td>
+                        <td>{{ $user['email'] }}</td>
+                        <td>{{ $user['created_at'] }}</td>
+                        <td>{{ $user['updated_at'] }}</td>
+                    </tr>
+                  @endforeach
                 </tbody>
             </table>
         </div>
